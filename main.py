@@ -14,7 +14,7 @@ class Cube:
         self.vertices = self._calculate_vertices()
 
     def _calculate_vertices(self):
-        """Вычисляет вершины куба на основе его размера и положения."""
+        #Вычисляет вершины куба на основе его размера и положения.
         o = self.origin
         s = self.size
         return np.array([[o[0], o[1], o[2]],
@@ -27,7 +27,7 @@ class Cube:
                          [o[0], o[1] + s, o[2] + s]])
 
     def draw(self):
-        """Отображает куб в 3D пространстве."""
+        #Отображает куб в 3D пространстве.
         fig = plt.figure()
         ax = fig.add_subplot(111, projection='3d')
 
