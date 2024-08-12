@@ -52,5 +52,6 @@ class Cube:
         plt.show()
 
 # Пример использования
-cube = Cube(origin=(0, 0, 0), size=1)
-cube.draw()
+if __name__ == "__main__":
+   cube = Cube(origin=(0, 0, 0), size=1)
+   cube.draw()
